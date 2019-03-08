@@ -2,20 +2,20 @@
   <div class="right-content">
     <div class="content">
       <form class="con-form">
-        <div  class=" item">
+        <div class="item">
           <label class="lalbel">生产计划：</label>
           <div class="el-form-item__content">
-            <div  class="el-input">
-              <input class="el-input__inner" />
+            <div class="el-input">
+              <input class="el-input__inner">
             </div>
           </div>
         </div>
-        <div  class=" item">
+        <div class="item">
           <label class="lalbel">产品名称：</label>
           <div class="el-form-item__content">
-            <div  class="el-input">
-              <Select class="con-itme-sele"   placeholder="请选择">
-                <Option value="">全部</Option>
+            <div class="el-input">
+              <Select class="con-itme-sele" placeholder="请选择">
+                <Option value>全部</Option>
                 <Option value="0">水稻田鞋类</Option>
                 <Option value="3">浦江蟹</Option>
                 <Option value="1">大宗产品蟹</Option>
@@ -25,14 +25,36 @@
             </div>
           </div>
         </div>
-        <div  class="time item">
+        <div class="time item">
           <label class="lalbel">计划开始时间：</label>
           <div class="el-form-item__content">
             <div class="el-input">
-                  <DatePicker :value="value1" format="yyyy-MM-dd" type="date" placeholder="选择日期" class="inblock" style="width: 200px"></DatePicker>
-                  <div class="line inblock">一</div>
-                  <DatePicker :value="value1" format="yyyy-MM-dd" type="date" placeholder="选择日期"  class="inblock" style="width: 200px"></DatePicker>
+              <DatePicker
+                format="yyyy-MM-dd"
+                type="date"
+                placeholder="选择日期"
+                class="inblock"
+                style="width: 200px"
+              ></DatePicker>
+              <div class="line inblock">一</div>
+              <DatePicker
+                format="yyyy-MM-dd"
+                type="date"
+                placeholder="选择日期"
+                class="inblock"
+                style="width: 200px"
+              ></DatePicker>
             </div>
+          </div>
+        </div>
+        <div  class="el-form-item last-item item">
+          <div class="el-form-item__content">
+            <button  class="search btn-submit">
+                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+            </button>
+            <button  class="btn-add add-button">
+              <Icon type="md-add"/>&nbsp;&nbsp;新增生产计划
+            </button>
           </div>
         </div>
       </form>
@@ -178,11 +200,11 @@ export default {
 };
 </script>
 <style lang="less">
-    .right-content .content .con-form .time {
-        min-width: 480px;
-        label{
-            width: 110px!important;
-        }
-    }
+.right-content .content .con-form .time {
+  min-width: 480px;
+  label {
+    width: 110px !important;
+  }
+}
 </style>
 
