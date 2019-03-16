@@ -3,7 +3,7 @@
     <div class="content">
       <form class="con-form con-form-right">
         <div class="item">
-          <label class="lalbel">生产计划：</label>
+          <label class="lalbel">养殖基地：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <input class="el-input__inner">
@@ -11,7 +11,7 @@
           </div>
         </div>
         <div class="item">
-          <label class="lalbel">产品名称：</label>
+          <label class="lalbel">养殖产品：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="item">
-          <label class="lalbel" style="width:54px">状态：</label>
+          <label class="lalbel" style="width:54px">操作：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
@@ -42,7 +42,7 @@
         <div class="time item">
           <label class="lalbel">实际结束时间：</label>
           <div class="el-form-item__content">
-            <div class="el-input">
+            <div class="el-input" >
               <DatePicker
                 format="yyyy-MM-dd"
                 type="date"
@@ -61,8 +61,11 @@
             </div>
           </div>
         </div>
-        <div  class="el-form-item last-item item positions">
+        <div  class="el-form-item last-item item positions pisntsh">
           <div class="el-form-item__content">
+            <button class="btn-add add-button" style="width:96px">
+                <i class="ivu-icon ivu-icon-md-add"></i>&nbsp;&nbsp;新增
+             </button>
             <button  class="search btn-submit">
                 <Icon type="ios-search"/>&nbsp;&nbsp;查询
             </button>
@@ -85,62 +88,49 @@ export default {
     return {
       columns1: [
         {
-          title: "生产计划编号	",
+          title: "操作",
           key: "name"
         },
         {
-          title: "生产计划",
+          title: "投入品",
           key: "age"
         },
         {
-          title: "养殖基地",
+          title: "使用量",
           key: "names"
         },
         {
-          title: "产品名称",
+          title: "捕捞量（只）",
           key: "son"
         },
         {
-          title: "开始时间",
+          title: "养殖基地",
           key: "sta"
         },
         {
-          title: "结束时间",
+          title: "养殖产品",
           key: "end"
         },
         {
-          title: "状态",
-          key: "type",
-          render: (h, params) => {
-            if (params.row.type == 1) {
-              return h(
-                "div",
-                {
-                  style: {
-                    color: "#fff"
-                  }
-                },
-                "已执行"
-              );
-            } else {
-              return h(
-                "div",
-                {
-                  style: {
-                     color: "#77797c"
-                  }
-                },
-                "已终止"
-              );
-            }
-          }
+          title: "生育期阶段",
+          key: "ensd"
         },
+        {
+          title: "操作人",
+          key: "ensfd"
+        },
+        {
+          title: "操作时间",
+          key: "ensfdt",
+          width:175
+        },
+       
         {
           title: "操作",
           width: 200,
           key: "",
           render: (h, params) => {
-            if (params.row.type == 1) {
+            if (params.row.type == 3) {
               return h("div", [
                 h("i", {
                   class: "icons icons1",
@@ -175,12 +165,12 @@ export default {
                     title: "查看"
                   }
                 }),
-                h("i", {
-                  class: "icons icons5",
-                  attrs: {
-                    title: "执行"
-                  }
-                })
+                // h("i", {
+                //   class: "icons icons5",
+                //   attrs: {
+                //     title: "执行"
+                //   }
+                // })
               ]);
             }
           }
@@ -188,95 +178,126 @@ export default {
       ],
       data1: [
         {
-          name: "2017121802",
-          age: 33,
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "1"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
         },
         {
-          name: "2017122203",
-          age: "2018年河蟹养殖计划",
-          date: "2016-10-03",
-          names: "大闸蟹养殖基地01号",
-          son: "浦江蟹",
-          sta: "2017-12-12",
-          end: "2017-12-20",
-          type: "2"
-        }
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
+        },
+        {
+          name: "投放饵料",
+          age: '黄豆',
+          names: "10 KG",
+          son: "10",
+          sta: "大闸蟹养殖基地01号",
+          end: "小虾蟹",
+          type: "1",
+          ensd:"产中阶段",
+          ensfd:"hujie",
+          ensfdt:"2017-12-26 10:43:52"
+        },
+        
       ]
     };
   }

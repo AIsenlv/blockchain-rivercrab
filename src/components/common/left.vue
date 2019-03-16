@@ -55,9 +55,7 @@ export default {
              let pat=this.$route.path;
                // console.log(pat);
                 this.menuList.forEach(i => {
-                    
                     // 判断如果数据中的menuList[i]的show属性不等于当前数据的isSubShow属性那么menuList[i]等于false
-                    console.log(pat,(i.path));
                     if (pat.indexOf(i.path)>-1){
                         i.isSubShow = true;
                         if(i.subItems.length>0){
@@ -178,7 +176,7 @@ export default {
         .activred{
             background: linear-gradient(90deg, #1b1e22, #354f7b, #1b1e22);
             border-image: linear-gradient(90deg, rgba(255, 88, 88, 0), rgba(250, 250, 250, 0.5), rgba(255, 88, 88, 0)) 10 1;
-            i{
+            .icons{
                 transform: rotate(-90deg);
                 transform-origin:center center;
             }

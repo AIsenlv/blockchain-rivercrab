@@ -29,37 +29,37 @@ export const  date= [
         name:'养殖操作',
         imgUrl:'md-pint',
         isSubShow:false,
-        path:'/ewewe',
+        path:'/modelcommon/cultivation',
         subItems:[]
     },
     {
         name:'订单管理',
         imgUrl:'md-photos',
         isSubShow:false,
-        path:'/222',
+        path:'/modelcommon/orderform',
         subItems:[]
     },
     {
         name:'捕捞记录',
         imgUrl:'ios-person',
         isSubShow:false,
-        path:'/222',
+        path:'/modelcommon/catchs',
         subItems:[]
     },
     {
         name:'朔源管理',
         imgUrl:'md-list-box',
         isSubShow:false,
-        path:'/9999',
+        path:'/source',
         subItems:[
             {
                 name:'打印朔源码',
-                path:'/',
+                path:'/source/sourcecode',
                 isshw:false
             },
             {
                 name:'打印朔管理',
-                path:'/',
+                path:'/source/sourcemanag',
                 isshw:false
             },
         ]
@@ -68,7 +68,7 @@ export const  date= [
         name:'物联网管理',
         imgUrl:'md-link',
         isSubShow:false,
-        path:'/9999',
+        path:'/internetOfThings',
         subItems:[
             {
                 name:'实时监控',
@@ -82,7 +82,7 @@ export const  date= [
             },
             {
                 name:'图片视频',
-                path:'/',
+                path:'/internetOfThings/picturevideo',
                 isshw:false
             },
         ]
@@ -91,28 +91,28 @@ export const  date= [
         name:'检验检测',
         imgUrl:'md-map',
         isSubShow:false,
-        path:'/9999',
+        path:'/modelcommon/detection',
         subItems:[]
     },
     {
         name:'销售管理',
         imgUrl:'md-cart ',
         isSubShow:false,
-        path:'/9999',
+        path:'/modelcommon/market',
         subItems:[]
     },
     {
         name:'售后管理',
         imgUrl:'md-at',
         isSubShow:false,
-        path:'/9999',
+        path:'/modelcommon/aftersale',
         subItems:[]
     },
     {
         name:'客户管理',
         imgUrl:'md-people',
         isSubShow:false,
-        path:'/9999',
+        path:'/modelcommon/client',
         subItems:[]
     },
     {
@@ -144,49 +144,49 @@ export const  date= [
         ]
     },
     {
-        name:'基础信息伟华',
+        name:'基础信息维护',
         imgUrl:'md-menu',
         isSubShow:false,
-        path:'/9999',
+        path:'/basicmessage',
         subItems:[
             {
                 name:'企业信息',
-                path:'/',
+                path:'/basicmessage/eInformation',
                 isshw:false
             },
             {
                 name:'养殖基地',
-                path:'/',
+                path:'/basicmessage/breedingbase',
                 isshw:false
             },
             {
                 name:'产品管理',
-                path:'/',
+                path:'/basicmessage/product',
                 isshw:false
             },
             {
                 name:'投入品管理',
-                path:'/',
+                path:'/basicmessage/ontheproduct',
                 isshw:false
             },
             {
                 name:'投入品分类',
-                path:'/',
+                path:'/basicmessage/inClassification',
                 isshw:false
             },
             {
                 name:'产品分类',
-                path:'/',
+                path:'/basicmessage/productClassify',
                 isshw:false
             },
             {
                 name:'生育期分类',
-                path:'/',
+                path:'/basicmessage/birthCategory',
                 isshw:false
             },
             {
                 name:'农事操作分类',
-                path:'/',
+                path:'/basicmessage/breedCategory',
                 isshw:false
             },
         ]
@@ -195,46 +195,46 @@ export const  date= [
         name:'系统管理',
         imgUrl:'md-settings',
         isSubShow:false,
-        path:'/9999',
+        path:'/systemmanagement',
         subItems:[
             {
                 name:'组织机构',
-                path:'/',
+                path:'/systemmanagement/managers',
                 isshw:false
             },
             {
                 name:'用户管理',
-                path:'/',
+                path:'/systemmanagement/usermeages',
                 isshw:false
             },
             {
                 name:'角色管理',
-                path:'/',
+                path:'/systemmanagement/role',
                 isshw:false
             },
             {
                 name:'数据字典',
-                path:'/',
+                path:'/systemmanagement/dictionary',
                 isshw:false
             },
             {
                 name:'病虫害预警设置',
-                path:'/',
+                path:'/systemmanagement/pests',
                 isshw:false
             },
             {
                 name:'传感器预警设置',
-                path:'/',
+                path:'/systemmanagement/sensor',
                 isshw:false
             },
             {
                 name:'登陆日志',
-                path:'/',
+                path:'/systemmanagement/loginlog',
                 isshw:false
             },
             {
                 name:'操作日志',
-                path:'/',
+                path:'/systemmanagement/operationlog',
                 isshw:false
             },
         ]

@@ -2,25 +2,35 @@
   <div class="right-content">
     <div class="content">
       <form class="con-form">
+       
         <div class="item">
-          <label class="lalbel">生产计划：</label>
-          <div class="el-form-item__content">
-            <div class="el-input">
-              <input class="el-input__inner">
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <label class="lalbel">产品名称：</label>
+          <label class="lalbel">捕捞地点：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
                 <Option value>全部</Option>
-                <Option value="0">水稻田鞋类</Option>
+                <Option value="0">稻田养殖区</Option>
+                <Option value="3">池塘混养区</Option>
+                <Option value="1">鱼养殖区</Option>
+                <Option value="2">湖里养殖基地</Option>
+                <Option value="4">湖里蟹养殖基地001</Option>
+                <Option value="5">稻田蟹养殖基地001</Option>
+              </Select>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <label class="lalbel">捕捞产品：</label>
+          <div class="el-form-item__content">
+            <div class="el-input">
+              <Select class="con-itme-sele" placeholder="请选择">
+                <Option value>全部</Option>
+                <Option value="0">水稻田蟹类</Option>
                 <Option value="3">浦江蟹</Option>
                 <Option value="1">大宗产品蟹</Option>
                 <Option value="2">大河西</Option>
                 <Option value="4">大闸江蟹</Option>
+                <Option value="5">嘉兴湖大闸蟹</Option>
               </Select>
             </div>
           </div>
@@ -30,16 +40,16 @@
           <div class="el-form-item__content">
             <div class="el-input">
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
                 style="width: 180px"
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
                 style="width: 180px"
@@ -53,7 +63,7 @@
                 <Icon type="ios-search"/>&nbsp;&nbsp;查询
             </button>
             <button  class="btn-add add-button">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增生产计划
+              <Icon type="md-add"/>&nbsp;&nbsp;新增捕捞记录
             </button>
           </div>
         </div>
@@ -200,7 +210,7 @@ export default {
   }
 };
 </script>
-<style lang="less" scoped>
+<style lang="less">
 .right-content .content .con-form .time {
   min-width: 480px;
   label {

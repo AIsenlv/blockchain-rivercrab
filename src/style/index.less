@@ -14,6 +14,7 @@
         background: linear-gradient(90deg, #354864, #1b2330);
         border-bottom: 2px solid transparent;
         position: relative;
+       
         img{
             position: absolute;
             width: 543px;
@@ -83,6 +84,7 @@
 }
 .section{
     overflow: hidden;
+    background: rgba(20, 19, 20, 0.26);
 }
 
 //左侧菜单
@@ -112,13 +114,17 @@
             height: auto;
             width: 100%;
             border: 1px solid rgba(28, 135, 217, .1);
-            background: rgba(54, 80, 124, .4);
+            background: rgba(38, 52, 75, 0.4);
             margin-bottom: 24px;
             padding: 30px 44px;
             box-sizing: border-box;
+            position: relative;
             &:after, &:before {
                 display: table;
                 content: " ";
+            }
+            .line{
+                padding: 0 5px;
             }
             .item {
                 min-width: 306px;
@@ -132,6 +138,9 @@
                     padding: 0;
                     line-height: 32px;
                     text-align: left;
+                }
+                .wids{
+                    width: 82px!important;
                 }
                 .el-form-item__content {
                     float: left;
@@ -148,6 +157,7 @@
                         background-color: #192333!important;
                         box-shadow: none;
                         height: 33px;
+                        font-size: 13.33px;
                         border-radius: 3px;
                     }
                     .ivu-select-visible .ivu-select-selection{
@@ -157,6 +167,7 @@
                     }
                     .ivu-select-selected-value{
                         color: #fff;
+                        font-size: 13.33px;
                     }
                 }
                 .el-input, .el-input__inner {
@@ -172,16 +183,14 @@
                     border-radius: 4px;
                     padding: 3px 10px;
                 }
-                .ivu-date-picker-header{
-                    border:0;
-                }
-
+               
                 .ivu-select-dropdown {
                     background: #192333;
                     border: 1px solid #20a0ff;
                     border-radius: 2px;
                     li{
                         color: #8eb5ef;
+                        font-size: 13.33px!important;
                         &:hover{
                             background: #243758;
                             color: #bed1ed;
@@ -194,6 +203,9 @@
                 .ivu-date-picker-cells span em{
                     font-size: 12px;
                     color: #fff;
+                    &:hover{
+                        background-color: #2d8cf0;
+                    }
                 }
                 .ivu-date-picker-cells-cell-prev-month em,.ivu-date-picker-cells-cell-next-month em{
                     color: #8db2e0!important;
@@ -207,10 +219,38 @@
                 .el-form-item__content{
                     width: auto;
                 }
+                .ivu-date-picker-cells{
+                    width: 240px;
+                }
                 .ivu-select-dropdown {
                     border: 0!important;
                     background: #2d4160;
                 }
+                .ivu-date-picker-header{
+                    border-bottom:1px solid #055fb2;
+                }
+                .ivu-picker-confirm{
+                    border-top:1px solid #055fb2;
+                }
+                .ivu-btn-text:hover{
+                        background-color: #2d8cf0;
+                }
+                
+                .ivu-date-picker-cells span{
+                    width: 30px;
+                }
+                span.ivu-date-picker-cells-cell{
+                    width: 34px;
+                    text-align: center;
+                }
+                .ivu-btn-default{
+                    background-color: #2a466f;
+                    border: 1px solid #2d8cf0;
+                }
+            }
+            .autowin{
+                width: auto;
+                input{display: inline-block;}
             }
             .last-item{
                 .el-form-item__content {
@@ -257,6 +297,24 @@
                     i{color: #fff;font-weight: bold;font-weight: 15px}
                 }
             }
+            .positions{
+                position: absolute;
+                right: 2%;
+                min-width: auto;
+                top: 55px;
+                z-index: 99;
+            }
+            .pisntsh{
+                width: 100px;
+                top: 35.5px;
+                .el-form-item__content .btn-submit,.el-form-item__content .add-button{
+                    margin-left: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .con-form-right{
+            padding-right: 146px;
         }
         .tables{
             border:1px solid #29374a;
@@ -295,15 +353,42 @@
                 .icons5{
                     background: url('../assets/icon.png')no-repeat -100px 0;
                 }
+                .icons6{
+                    background: url('../assets/icon.png')no-repeat -166px 0;
+                }
+                .icons7{
+                    background: url('../assets/icon.png')no-repeat -407px 0;
+                }
+                .icons8{
+                    background: url('../assets/icon.png')no-repeat -333px 0;
+                }
+                .icons9{
+                    background: url('../assets/icon.png')no-repeat -370px 0;
+                }
+               
             }
             .ivu-table, th{
                 background: none;
+                font-weight: bold;
+                
+            }
+            th{
+                .ivu-table-cell{
+                    height: 40px;
+                    line-height: 40px;
+                }
             }
             td, th {
-                border: none;
+                border: 0;
                 color: #cfe2ff;
                 background: none;
                 text-align: center;
+                border-top: 1px solid #2d4160!important;
+                
+            }
+            td{padding: 5px 0;}
+            .ivu-table-tbody tr:hover{
+                background-color: rgba(28, 135, 217, .1);
             }
             thead {
                 background: linear-gradient(90deg, #2f4362, #2a4670, #2d415f);
@@ -313,12 +398,18 @@
         }
         .page{
                 margin-top: 20px;
-                float: right;
                 overflow: hidden;
                 padding: 1px;
-
-           ul{
+            .left{
                 float: left;
+                line-height: 32px;
+                span{
+                    padding: 0 5px;
+                    color: #2d8cf0;
+                }
+            }
+           ul{
+                float: right;
            }
            span.inblock{
                 float: left;
@@ -331,6 +422,7 @@
                 color: #97a8be;
                 cursor: pointer;
            }
+           
            .ivu-page-item,.ivu-page-next, .ivu-page-prev,.ivu-page-options-elevator input{
                 background: rgba(38, 53, 75, .58)!important;
                 border: 1px solid rgba(84, 116, 169, .77)!important;
