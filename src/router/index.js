@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import login from '@/components/login/login'
+import detail from '@/components/login/detail'
+import passwd from '@/components/login/passwd'
 import preview from '@/components/preview/preview'
 import home from '@/components/home/home'
 import production from '@/components/production/production'
@@ -34,7 +36,7 @@ import managers from  '@/components/systemmanagement/managers'
 import dictionary from  '@/components/systemmanagement/dictionary'
 
 import picturevideo from  '@/components/internetOfThings/picturevideo'
-
+import historyDataIndex from  '@/components/internetOfThings/historyDataIndex'
 
 Vue.use(Router)
 export default new Router({
@@ -48,6 +50,16 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: login
+    },
+    {
+      path:'/detail',
+      name:'detail',
+      component:detail
+    },
+    {
+      path:'/passwd',
+      name:'passwd',
+      component:passwd
     },
     {
       path: '/preview',
@@ -198,6 +210,11 @@ export default new Router({
           path:'/internetOfThings/picturevideo',
           name: 'picturevideo',
           component: picturevideo
+        },
+        {
+          path:'/internetOfThings/historyDataIndex',
+          name: 'historyDataIndex',
+          component: historyDataIndex
         },
         
       ],

@@ -55,7 +55,7 @@ export default {
         {
           title: "上传时间",
           key: "names",
-          width:120
+          width:200
         },
         {
           title: "上传类型",

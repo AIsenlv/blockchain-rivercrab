@@ -10,18 +10,20 @@
       </p>
     </div>
     <ol class="title-nav">
-      <li formdata>
-        <a formdata href="#/detail" class>
-          <span formdata>hujie</span>
+      <li >
+        <a  href="#/detail" class>
+          <span >hujie</span>
         </a>
       </li>
-      <li formdata>
-        <a formdata href="#/passwd" class>
-          <span formdata class="s-next">修改密码</span>
+      <li >
+        <a  href="#/passwd" class>
+          <span  class="s-next">修改密码</span>
         </a>
       </li>
-      <li formdata>
-        <span formdata class="s-last">退出</span>
+      <li >
+        <a  href="#/login" class>
+        <span  class="s-last">退出</span>
+        </a>
       </li>
     </ol>
   </div>

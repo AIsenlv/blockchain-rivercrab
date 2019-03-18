@@ -6,15 +6,15 @@
 </template>
 <style lang="less">
     .footer{
-        height: 76px;
-        // background: #121521;
-        color: #516f9b;
-        font-size: 14px;
-        text-align: center;
-        line-height: 30px;
-        padding-top: 14px;
-        clear: both;
-        margin-top: 40px;
+        height: 114px;
+      color: #516f9b;
+      font-size: 14px;
+      text-align: center;
+      line-height: 30px;
+      /* padding-top: 14px; */
+      clear: both;
+      padding-top: 40px;
+      background: rgba(20, 19, 20, 0.26);
     }
 </style>
 

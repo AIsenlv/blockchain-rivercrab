@@ -77,7 +77,7 @@ export const  date= [
             },
             {
                 name:'历史数据',
-                path:'/',
+                path:'/internetOfThings/historyDataIndex',
                 isshw:false
             },
             {
