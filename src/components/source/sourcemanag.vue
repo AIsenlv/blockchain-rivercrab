@@ -3,7 +3,7 @@
     <div class="content">
       <form class="con-form con-form-right">
         <div class="item">
-          <label class="lalbel">溯源码：</label>
+          <label class="lalbel win70">溯源码：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <input class="el-input__inner">
@@ -31,7 +31,7 @@
           </div>
         </div>
         <div class="item">
-          <label class="lalbel" style="width:54px">状态：</label>
+          <label class="lalbel win54">状态：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="item">
-          <label class="lalbel">产品：</label>
+          <label class="lalbel win54">产品：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <input class="el-input__inner">
@@ -53,7 +53,7 @@
         <div  class="el-form-item last-item item positions">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
 
           </div>
@@ -245,7 +245,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .right-content .content .con-form .time {
   min-width: 480px;
   label {

@@ -44,8 +44,8 @@ export default {
             margin-left: -10px;
             box-sizing: border-box;
             transform: skew(40deg);
-            border-top: 1px solid #232d3d;
-            border-right: 1px solid #232d3d;
+            border-top: 1px solid #407678;
+            border-right: 1px solid #407678;
         }
     }
     .chart-border-r {
@@ -62,8 +62,8 @@ export default {
             margin-left: 10px;
             box-sizing: border-box;
             transform: skew(-40deg);
-            border-top: 1px solid #232d3d;
-            border-left: 1px solid #232d3d;
+            border-top: 1px solid #407678;
+            border-left: 1px solid #407678;
         }
     }
     .chart-tit{
@@ -73,19 +73,19 @@ export default {
         top: 0;
         left: 25%;
         box-sizing: border-box;
-        border-bottom: 1px solid #232d3d;
+        border-bottom: 1px solid #407678;
         display: flex;
         flex-direction: row;
         .tit-border-l {
             height: 8px;
             flex: 1;
-            background: rgba(92, 116, 156, .7);
+            background: #407678;
             position: relative;
             &:after {
                 content: "";
                 width: 0;
                 height: 0;
-                border-top: 8px solid rgba(92, 116, 156, .7);
+                border-top: 8px solid #407678;
                 border-left: 7px solid transparent;
                 position: absolute;
                 left: -7px;
@@ -96,18 +96,18 @@ export default {
         .tit-text{
             margin-top: -4px;
             font-size: 16px;
-            color: #8eb5ef;
+            color: #ffffff;
             padding: 0 10px;
         }
         .tit-border-r {
             height: 8px;
             flex: 1;
-            background: rgba(92, 116, 156, .7);
+            background: #407678;
             &:after {
                 content: "";
                 width: 0;
                 height: 0;
-                border-top: 8px solid rgba(92, 116, 156, .7);
+                border-top: 8px solid #407678;
                 border-right: 7px solid transparent;
                 position: absolute;
                 right: -7px;

@@ -3,7 +3,7 @@
     <div class="content">
       <form class="con-form">
         <div class="item">
-          <label class="lalbel win70">反馈人：</label>
+          <label class="lalbel" style="width:65px">反馈人：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <input class="el-input__inner">
@@ -11,23 +11,25 @@
           </div>
         </div>
         <div class="time item">
-          <label class="lalbel">提出时间：</label>
+          <label class="lalbel" style="width:75px!important">提出时间：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+               format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
+                
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
+                
               ></DatePicker>
             </div>
           </div>
@@ -37,10 +39,10 @@
         <div  class="el-form-item last-item item">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
             <button  class="btn-add add-button win96">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增
+              新增
             </button>
           </div>
         </div>

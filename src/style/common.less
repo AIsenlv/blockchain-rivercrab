@@ -16,19 +16,12 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  color: #bad8ff;
+  color: #fffeff;
   font-size: 14px;
   vertical-align: baseline;
   font-family:'微软雅黑',Verdana, Geneva, sans-serif;
 }
-html {
-    line-height: 1;
-  }
-body{
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-}
+
 ol, ul {
   list-style: none;
 }
@@ -72,19 +65,18 @@ input, textarea, select, button {
 
 html body input,body .ivu-input{
   height: 38px;
-  border: 1px solid #2e3b48;
+  border: 1px solid #407678;
   border-radius: 5px;
-  background: rgba(8, 11, 14, .5);
+  background: none;
   outline: none;
   color: #fff;
   font-size: 13.33px;
 }
-.add-button:hover,.btn_add:hover{
-  background: linear-gradient(90deg, #459ee2, #1e70bd)!important;
+.add-button:hover,.btn_add:hover,.btn-submit:hover{
+  background: rgba(143,252,255,0.5)!important;
+  border: 1px solid #8ffcff!important;
 }
-.btn-submit:hover{
-  background: linear-gradient(90deg, #e0a24b, #b86812)!important;
-}
+
 
 html body input::-webkit-input-placeholder,body .ivu-input::-webkit-input-placeholder{
   color: #757575;
@@ -107,7 +99,7 @@ html body input::-webkit-input-placeholder,body .ivu-input::-webkit-input-placeh
   background: #fff;
 }
 input::placeholder,select:invalid,.ivu-select-placeholder{
-  color: #8eb5ef!important;
+  color: #eee!important;
 }
 
 //class类名常用
@@ -126,12 +118,21 @@ input::placeholder,select:invalid,.ivu-select-placeholder{
 .win70{
   width:70px!important;
 }
+.win54{
+  width:54px!important;
+}
 .linst{
   text-decoration: underline;
-    color: #2497f1;
+    color: #8ffcff;
     cursor: pointer;
+}
+.middle{
+  vertical-align:middle;
 }
 .hide{display: none;}
 .cursor{
   cursor: pointer;
+}
+.ivu-select-arrow{
+  color: #59a2a4;
 }

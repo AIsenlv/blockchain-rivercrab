@@ -30,7 +30,7 @@
                       rows="2"
                       v-model="arrs.text"
                       validateevent="true"
-                      class="el-input__inner"
+                      class="row_txt select_txt txt_prod"
                     >
                     <!---->
                     <!---->
@@ -230,7 +230,7 @@ export default {
       template: `<div>
                     <div class="el-tree-node" v-for="a in msg">
                         <div class="el-tree-node__content"  >
-                            <span class="el-tree-node__expand-icon" :class="a.valid || a.next.length=='0'?'expanded':''" :style="'margin-left:'+(a.inx==1?'50':(50+a.inx*10))+'px'"
+                            <span class="el-tree-node__expand-icon icon-1" :class="a.valid || a.next.length=='0'?'icon-2':''" :style="'margin-left:'+(a.inx==1?'50':(50+a.inx*10))+'px'"
                            @click.stop="a.valid=!a.valid"
                            ></span>
                             <span class="el-tree-node__label"  @click.stop="colorclick(a)" >{{a.text}}</span>
@@ -257,7 +257,7 @@ export default {
             <div>
                 <div class="el-tree-node" v-for="item in msg"  @click.stop="clis(item)">
                         <div class="el-tree-node__content" :class="item.txt?'acisnt':''" style="padding-left: 0px;">
-                        <span class="el-tree-node__expand-icon" :class="!item.valid || item.next.length=='0'?'expanded':''" :style="'margin-left:'+(item.inx==1?'60':(60+item.inx*15))+'px'"></span>
+                        <span class="el-tree-node__expand-icon icon-1" :class="!item.valid || item.next.length=='0'?'icon-2':''" :style="'margin-left:'+(item.inx==1?'60':(60+item.inx*15))+'px'"></span>
                         <span class="el-tree-node__label">{{item.text}}</span>
                         </div>
                         <div class="el-tree-node__children" v-if="!item.valid">

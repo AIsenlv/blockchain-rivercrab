@@ -3,7 +3,7 @@
     <div class="content">
       <form class="con-form">
         <div class="item">
-          <label class="lalbel" style="width:54px">账户：</label>
+          <label class="lalbel win54" >账户：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <input class="el-input__inner">
@@ -13,7 +13,7 @@
         <div  class="el-form-item last-item item">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
           </div>
         </div>

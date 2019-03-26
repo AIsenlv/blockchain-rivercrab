@@ -29,7 +29,7 @@
 
             
             <tr>
-              <td rowspan="4" style="border-right: 1px solid rgb(41, 55, 74);">产前</td>
+              <td rowspan="4" style="border-right: 1px solid #407678;">产前</td>
               <td>池塘消毒</td>
               <td style="text-align: left;">2017当年春节后一月左右</td>
               <td style="text-align: left;">
@@ -96,7 +96,7 @@
               </td>
             </tr>
             <tr>
-              <td rowspan="3" style="border-right: 1px solid rgb(41, 55, 74);">产中</td>
+              <td rowspan="3" style="border-right: 1px solid #407678;">产中</td>
               <td>饵料采购</td>
               <td style="text-align: left;">当年2月中旬至9月1号 按月定制</td>
               <td style="text-align: left;">
@@ -147,7 +147,7 @@
               </td>
             </tr>
             <tr>
-              <td rowspan="3" style="border-right: 1px solid rgb(41, 55, 74);">产后</td>
+              <td rowspan="3" style="border-right: 1px solid #407678;">产后</td>
               <td>捕捞</td>
               <td style="text-align: left;">当年3月1号-当年9月2号</td>
               <td style="text-align: left;">
@@ -243,7 +243,7 @@ export default {
       template: `<div>
                     <div class="el-tree-node" v-for="a in msg">
                         <div class="el-tree-node__content" :class="a.txt?'acisnt':''" @click="colorclick(a)">
-                            <span class="el-tree-node__expand-icon" :class="a.valid || a.next.length=='0'?'expanded':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"
+                            <span class="el-tree-node__expand-icon icon-1" :class="a.valid || a.next.length=='0'?'icon-2':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"
                            
                             ></span>
                             <span class="el-tree-node__label"  >{{a.text}}</span>

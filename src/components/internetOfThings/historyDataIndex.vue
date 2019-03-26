@@ -16,7 +16,7 @@
                         type="date"
                         placeholder="选择日期"
                         class="inblock"
-                        style="width: 180px"
+                        
                     ></DatePicker>
                     <div class="line inblock">一</div>
                     <DatePicker
@@ -24,7 +24,7 @@
                         type="date"
                         placeholder="选择日期"
                         class="inblock"
-                        style="width: 180px"
+                        
                     ></DatePicker>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                 </div>
                 </div>
                 <div class="item">
-                <label class="lalbel" style="width:54px">设备：</label>
+                <label class="lalbel win54" >设备：</label>
                 <div class="el-form-item__content">
                     <div class="el-input">
                     <input class="el-input__inner">
@@ -55,7 +55,7 @@
                 <div  class="el-form-item last-item item">
                 <div class="el-form-item__content">
                     <button  class="search btn-submit">
-                        <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                        查询
                     </button>
                 </div>
                 </div>
@@ -70,7 +70,7 @@
         <div v-if="!show">
             <form class="con-form">
                 <div class="time item" style="min-width:326px">
-                <label class="lalbel" style="width:54px">时间：</label>
+                <label class="lalbel win54" >时间：</label>
                 <div class="el-form-item__content">
                     <div class="el-input">
                     <DatePicker
@@ -78,7 +78,7 @@
                         type="date"
                         placeholder="选择日期"
                         class="inblock"
-                        style="width: 180px"
+                        
                     ></DatePicker>
                     <div class="line inblock">一</div>
                     <DatePicker
@@ -86,7 +86,7 @@
                         type="date"
                         placeholder="选择日期"
                         class="inblock"
-                        style="width: 180px"
+                        
                     ></DatePicker>
                     </div>
                 </div>
@@ -117,7 +117,7 @@
                 <div  class="el-form-item last-item item">
                 <div class="el-form-item__content">
                     <button  class="search btn-submit">
-                        <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                        查询
                     </button>
                 </div>
                 </div>
@@ -341,43 +341,6 @@ export default {
 </script>
 
 <style lang="less" >
-    .div_tab {
-        line-height: 50px;
-        text-align: center;
-        width: 100%;
-        height: 50px;
-        border-bottom: 2px solid #506a90;
-        font-size: 16px;
-        color: #bed8ff;
-        margin-bottom: 22px;
-        .tab_first {
-            width: 100px;
-            float: left;
-            height: 50px;
-            border-bottom: 2px solid #506a90;
-            margin-left: 35px;
-            cursor: pointer;
-             &:hover{
-                color: #fdce5a;
-            border-bottom: 2px solid #fdce5a;
-            }
-        }
-        .tab_second {
-            width: 140px;
-            float: left;
-            height: 50px;
-            border-bottom: 2px solid #506a90;
-            margin-left: 28px;
-            cursor: pointer;
-            &:hover{
-                color: #fdce5a;
-            border-bottom: 2px solid #fdce5a;
-            }
-        }
-        .tab_select {
-            color: #fdce5a;
-            border-bottom: 2px solid #fdce5a;
-        }
-    }
+    
 </style>
 

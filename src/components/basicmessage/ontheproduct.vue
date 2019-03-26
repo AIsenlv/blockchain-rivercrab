@@ -26,12 +26,12 @@
           </div>
         </div>
         <div  class="el-form-item last-item item">
-          <div class="el-form-item__content">
+          <div class="el-form-item__content" style="width:280px">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
             <button  class="btn-add add-button win120">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增投入品
+              新增投入品
             </button>
           </div>
         </div>

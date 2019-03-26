@@ -81,15 +81,17 @@ export default {
 <style lang="less" scoped>
 .cont-wrap {
   box-sizing: border-box;
-  border: 1px solid #2b3648;
+  border: 1px solid #407678;
+  margin: 20px;
   margin-bottom: 30px;
+  margin-top: 100px;
   .header {
-    background: rgba(51, 64, 85, 0.5);
+    background: #407678;
     height: 46px;
     line-height: 46px;
     box-sizing: border-box;
-    border-bottom: 1px solid #2b3648;
-    color: #bcd7ff;
+    border-bottom: 1px solid #407678;
+    color: #fff;
     text-indent: 30px;
   }
   .center-cont {
@@ -108,7 +110,7 @@ export default {
       padding-left: 90px;
       color: #d3e9ff;
       .list-name {
-        color: #83ace8;
+        color: #fff;
         margin-right: 18px;
         display: inline-block;
         width: 80px;

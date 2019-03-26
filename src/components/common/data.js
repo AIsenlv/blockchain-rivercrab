@@ -1,14 +1,14 @@
 export const  date= [
     {
-        name:'领导驾驶舱',
-        imgUrl:'ios-paper',
+        name:'全局驾驶舱',
+        imgUrl:'icon--',
         isSubShow:false,
         path:'/home',
         subItems:[]
     },
     {
-        name:'生产计划管理',
-        imgUrl:'md-bookmarks',
+        name:'生产中心',
+        imgUrl:'icon--2',
         isSubShow:false,
         path:'/production',
         subItems:[
@@ -18,7 +18,7 @@ export const  date= [
                 isshw:false
             },
             {
-                name:'生产计划历史',
+                name:'生产历史',
                 path:'/production/productionhistory',
                 isshw:false
             },
@@ -26,126 +26,144 @@ export const  date= [
     },
    
     {
-        name:'养殖操作',
-        imgUrl:'md-pint',
+        name:'养殖中心',
+        imgUrl:'icon--8',
         isSubShow:false,
-        path:'/modelcommon/cultivation',
-        subItems:[]
+        path:'/culteiva',
+        subItems:[
+            {
+                name:'养殖操作',
+                isshw:false,
+                path:'/culteiva/cultivation',
+            },
+            {
+                name:'捕捞记录',
+                isshw:false,
+                path:'/culteiva/catchs',
+            },
+        ]
     },
+   
+   
     {
-        name:'订单管理',
-        imgUrl:'md-photos',
-        isSubShow:false,
-        path:'/modelcommon/orderform',
-        subItems:[]
-    },
-    {
-        name:'捕捞记录',
-        imgUrl:'ios-person',
-        isSubShow:false,
-        path:'/modelcommon/catchs',
-        subItems:[]
-    },
-    {
-        name:'朔源管理',
-        imgUrl:'md-list-box',
+        name:'朔源物流中心',
+        imgUrl:'icon--4',
         isSubShow:false,
         path:'/source',
         subItems:[
             {
-                name:'打印朔源码',
+                name:'朔源码印生成',
                 path:'/source/sourcecode',
                 isshw:false
             },
             {
-                name:'打印朔管理',
+                name:'朔源物流查询',
                 path:'/source/sourcemanag',
+                isshw:false
+            },
+            {
+                name:'区块链查询',
+                path:'/source/blockchain',
+                isshw:false
+            },
+            {
+                name:'冷链查询',
+                path:'/source/coldchain',
                 isshw:false
             },
         ]
     },
     {
-        name:'物联网管理',
-        imgUrl:'md-link',
+        name:'物联网监测中心',
+        imgUrl:'icon--6',
         isSubShow:false,
         path:'/internetOfThings',
         subItems:[
             {
-                name:'实时监控',
-                path:'/',
+                name:'场地监控',
+                path:'/internetOfThings/timemonitor',
                 isshw:false
             },
             {
-                name:'历史数据',
+                name:'设备数据',
                 path:'/internetOfThings/historyDataIndex',
                 isshw:false
             },
             {
-                name:'图片视频',
+                name:'数据信息',
                 path:'/internetOfThings/picturevideo',
                 isshw:false
             },
+            {
+                name:'日常检测',
+                isshw:false,
+                path:'/internetOfThings/detection',
+                
+            },
         ]
     },
     {
-        name:'检验检测',
-        imgUrl:'md-map',
+        name:'销售中心',
+        imgUrl:'icon--7',
         isSubShow:false,
-        path:'/modelcommon/detection',
-        subItems:[]
-    },
-    {
-        name:'销售管理',
-        imgUrl:'md-cart ',
-        isSubShow:false,
-        path:'/modelcommon/market',
-        subItems:[]
-    },
-    {
-        name:'售后管理',
-        imgUrl:'md-at',
-        isSubShow:false,
-        path:'/modelcommon/aftersale',
-        subItems:[]
-    },
-    {
-        name:'客户管理',
-        imgUrl:'md-people',
-        isSubShow:false,
-        path:'/modelcommon/client',
-        subItems:[]
-    },
-    {
-        name:'统计分析',
-        imgUrl:'md-podium',
-        isSubShow:false,
-        path:'/9999',
+        path:'/modelcommons',
         subItems:[
             {
-                name:'说源码统计',
-                path:'/',
-                isshw:false
+                name:'销售管理',
+                isshw:false,
+                path:'/modelcommons/market',
             },
             {
-                name:'投入品统计',
-                path:'/',
-                isshw:false
+                name:'订单管理',
+                isshw:false,
+                path:'/modelcommons/orderform',
             },
             {
-                name:'检验检测统计',
-                path:'/',
-                isshw:false
+                name:'售后管理',
+                isshw:false,
+                path:'/modelcommons/aftersale',
             },
             {
-                name:'销售统计',
-                path:'/',
-                isshw:false
+                name:'客户管理',
+                isshw:false,
+                path:'/modelcommons/client',
             },
         ]
     },
+
+
+    
     {
-        name:'基础信息维护',
-        imgUrl:'md-menu',
+        name:'统计分析',
+        imgUrl:'icon--5',
+        isSubShow:false,
+        path:'/statistics',
+        subItems:[
+            {
+                name:'生产数据统计',
+                path:'/statistics/statisticsproduction',
+                isshw:false
+            },
+            {
+                name:'销售数据统计',
+                path:'/statistics/statisticemarket',
+                isshw:false
+            },
+            // {
+            //     name:'检测统计',
+            //     path:'/',
+            //     isshw:false
+            // },
+            // {
+            //     name:'订单统计',
+            //     path:'/',
+            //     isshw:false
+            // },
+        ]
+    },
+    {
+        name:'基础信息',
+        imgUrl:'icon--1',
         isSubShow:false,
         path:'/basicmessage',
         subItems:[
@@ -165,12 +183,12 @@ export const  date= [
                 isshw:false
             },
             {
-                name:'投入品管理',
+                name:'饲料管理',
                 path:'/basicmessage/ontheproduct',
                 isshw:false
             },
             {
-                name:'投入品分类',
+                name:'饲料分类',
                 path:'/basicmessage/inClassification',
                 isshw:false
             },
@@ -180,12 +198,12 @@ export const  date= [
                 isshw:false
             },
             {
-                name:'生育期分类',
+                name:'养殖期分类',
                 path:'/basicmessage/birthCategory',
                 isshw:false
             },
             {
-                name:'农事操作分类',
+                name:'养殖操作分类',
                 path:'/basicmessage/breedCategory',
                 isshw:false
             },
@@ -193,7 +211,7 @@ export const  date= [
     },
     {
         name:'系统管理',
-        imgUrl:'md-settings',
+        imgUrl:'icon-4',
         isSubShow:false,
         path:'/systemmanagement',
         subItems:[
@@ -212,18 +230,18 @@ export const  date= [
                 path:'/systemmanagement/role',
                 isshw:false
             },
+            // {
+            //     name:'数据字典',
+            //     path:'/systemmanagement/dictionary',
+            //     isshw:false
+            // },
             {
-                name:'数据字典',
-                path:'/systemmanagement/dictionary',
-                isshw:false
-            },
-            {
-                name:'病虫害预警设置',
+                name:'病虫害设置',
                 path:'/systemmanagement/pests',
                 isshw:false
             },
             {
-                name:'传感器预警设置',
+                name:'传感器设置',
                 path:'/systemmanagement/sensor',
                 isshw:false
             },

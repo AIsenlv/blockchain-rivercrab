@@ -12,26 +12,26 @@
             <!-- <ggg @showbox="toshow" :msg="dateArr"></ggg> -->
              <div class="el-tree-node" v-for="a in dateArr" :key="a.id">
                         <div class="el-tree-node__content" :class="a.txt?'acisnt':''" @click.stop.self="colorclick(a)" >
-                            <span class="el-tree-node__expand-icon" :class="a.valid || a.next.length=='0'?'expanded':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"
+                            <span class="el-tree-node__expand-icon middle icon-1" :class="a.valid || a.next.length=='0'?'icon-2':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"
                               @click.stop.self="colorclick(a)"
                             ></span>
-                            <span class="el-tree-node__label" @click.stop.self="colorclick(a)">{{a.text}}</span>
+                            <span class="el-tree-node__label middle" @click.stop.self="colorclick(a)">{{a.text}}</span>
                         </div>
                         <div class="el-tree-node__children" v-if="a.valid">
                                  <div class="el-tree-node" v-for="b in a.next" :key="b.id">
                                     <div class="el-tree-node__content" :class="b.txt?'acisnt':''" @click.stop.self="colorclick(b)" >
-                                        <span class="el-tree-node__expand-icon" :class="b.valid || b.next.length=='0'?'expanded':''" :style="'margin-left:'+(b.inx==1?'100':(100+b.inx*15))+'px'"
+                                        <span class="el-tree-node__expand-icon middle icon-1" :class="b.valid || b.next.length=='0'?'icon-2':''" :style="'margin-left:'+(b.inx==1?'100':(100+b.inx*15))+'px'"
                                           @click.stop.self="colorclick(b)"
                                         ></span>
-                                        <span class="el-tree-node__label" @click.stop.self="colorclick(b)">{{b.text}}</span>
+                                        <span class="el-tree-node__label middle" @click.stop.self="colorclick(b)">{{b.text}}</span>
                                     </div>
                                     <div class="el-tree-node__children" v-if="b.valid">
                                              <div class="el-tree-node" v-for="c in b.next" :key="c.id">
                                                 <div class="el-tree-node__content" :class="c.txt?'acisnt':''" @click.stop.self="colorclick(c)" >
-                                                    <span class="el-tree-node__expand-icon" :class="c.valid || c.next.length=='0'?'expanded':''" :style="'margin-left:'+(c.inx==1?'100':(100+c.inx*15))+'px'"
+                                                    <span class="el-tree-node__expand-icon middle icon-1" :class="c.valid || c.next.length=='0'?'icon-2':''" :style="'margin-left:'+(c.inx==1?'100':(100+c.inx*15))+'px'"
                                                       @click.stop.self="colorclick(c)"
                                                     ></span>
-                                                    <span class="el-tree-node__label" @click.stop.self="colorclick(c)">{{c.text}}</span>
+                                                    <span class="el-tree-node__label middle" @click.stop.self="colorclick(c)">{{c.text}}</span>
                                                 </div>
                                                 
                                             </div>
@@ -157,7 +157,7 @@ export default {
       template: `<div>
                     <div class="el-tree-node" v-for="a in msg">
                         <div class="el-tree-node__content" :class="a.txt?'acisnt':''" @click.stop.self="colorclick(a)" >
-                            <span class="el-tree-node__expand-icon" :class="a.valid || a.next.length=='0'?'expanded':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"
+                            <span class="el-tree-node__expand-icon icon-1" :class="a.valid || a.next.length=='0'?'icon-2':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"
                               @click.stop.self="colorclick(a)"
                             ></span>
                             <span class="el-tree-node__label" @click.stop.self="colorclick(a)">{{a.text}}</span>

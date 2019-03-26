@@ -44,7 +44,7 @@
                 type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                 style="width:180px"
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
@@ -52,18 +52,18 @@
                 type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
               ></DatePicker>
             </div>
           </div>
         </div>
-        <div  class="el-form-item last-item item">
+        <div  class="el-form-item last-item item" style="min-width:320px">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
             <button  class="btn-add add-button">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增捕捞记录
+              新增捕捞记录
             </button>
           </div>
         </div>
@@ -210,7 +210,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .right-content .content .con-form .time {
   min-width: 480px;
   label {

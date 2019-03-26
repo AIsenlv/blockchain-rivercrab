@@ -1,20 +1,22 @@
 <template>
      <div class="login">
-         <div class="txtlogo">水产养殖标准化生产溯源平台</div>
-         <div class="img"><img src="../../assets/login.4fcb9bc.png" alt=""></div>
+         <div class="txtlogo"><img src="../../assets/logo-2.png" alt=""></div>
+         <div class="img"><img src="../../assets/loginimg.png" alt=""></div>
          <div class="form">
              <div data-v-7915acaa="" class="lb-header">
                 用户登录
+                <div>
+                    <img src="../../assets/lefts.png" alt="">
+                    <img src="../../assets/rights.png" alt="">
+                </div>
             </div>
             <Form ref="formdata" class="cen" :model="formdata" :rules="ruleInline" inline>
                         <FormItem prop="user">
-                            <Input type="text" class="lb-cont-p" v-model="formdata.user"  @on-focus="" @on-change="" placeholder="请输入邮箱/手机号">
-                                <Icon type="ios-person-outline" slot="prepend"></Icon>
+                            <Input type="text" class="lb-cont-p" v-model="formdata.user"  @on-focus="" @on-change="" placeholder="用户名">
                             </Input>
                         </FormItem>
                         <FormItem prop="password" >
-                            <Input type="password" class="lb-cont-p" v-model="formdata.password"  @on-focus="" @on-change="" placeholder="请输入密码">
-                                <Icon type="ios-lock-outline" slot="prepend"></Icon>
+                            <Input type="password" class="lb-cont-p" v-model="formdata.password"  @on-focus="" @on-change="" placeholder="密码">
                             </Input>
                         </FormItem>
                         <!-- <FormItem prop="verify" :class="!verifyback1?'verify':'verify verifyactive'" v-show="!btntypes">
@@ -56,15 +58,15 @@ export default {
 </script>
 
 
-<style lang="less">
+<style lang="less" scoped>
     .login{
         min-width: 100%;
         height: 100%;
         padding-top: 8%;
         position: relative;
         overflow: hidden;
-        background: url(../../assets/login-bg.01dba20.jpg)no-repeat;
-        background-size: 100% 100%;
+        // background: url(../../assets/login-bg.01dba20.jpg)no-repeat;
+        // background-size: 100% 100%;
         .ivu-icon:before{
             font-weight: bold;
             font-size: 20px;
@@ -74,8 +76,8 @@ export default {
             top: 150px;
             left: 150px;
             color: @fff;
-            background: url(../../assets/123.png)no-repeat  0 0;
-            background-size: 95px;
+            // background: url(../../assets/123.png)no-repeat  0 0;
+            // background-size: 95px;
             line-height: 75px;
             text-indent: 80px;
             font-size: 30px;
@@ -94,19 +96,28 @@ export default {
                 position: absolute;
                 right: 10%;
                 top: 30%;
-                background: url(../../assets/login-block.155203f.png) no-repeat;
-                background-size: 100% 100%;
+                border: 1px solid #407678;
+                border-radius: 6px;
+                 background:rgba(89,162,164,0.1);
+                // background: url(../../assets/login-block.155203f.png) no-repeat;
                 text-align: center;
                 .cen{
                     padding: 30px 0;
                 }
+                .ivu-form-item{
+                    margin-right: 0;
+                }
                 .lb-header{
                     height: 70px;
-                    border-bottom: 1px solid rgba(80, 100, 123, .5);
+                    // border-bottom: 1px solid rgba(80, 100, 123, .5);
                     font-size: 22px;
                     text-align: center;
-                    line-height: 70px;
-                    color: #bed8ff;
+                    line-height: 36px;
+                    color: #a6b3c9;
+                    padding-top:21px;
+                    img{
+                        vertical-align: middle;
+                    }
                 }
                 .lb-cont-p{
                         width: 290px;
@@ -118,16 +129,22 @@ export default {
                         width: 290px;
                         height: 44px;
                         margin: 0 auto;
-                        margin-top: 50px;
+                        margin-top: 30px;
                         cursor: pointer;
                         border: none;
-                        border-radius: 5px;
-                        background: linear-gradient(180deg, #5d7cab, #304565);
+                        border-radius: 6px;
+                        //background: linear-gradient(180deg, #5d7cab, #304565);
+                        background: rgba(89,162,164,0.2);
+                        border: 1px solid #59a2a4;
                         color: #fff;
                         font-size: 18px;
-                        letter-spacing: 10px;
+                        letter-spacing: 3px;
                         outline: none;
                         box-shadow:none;
+                        &:hover{
+                            background: rgba(143,252,255,0.5);
+                            border: 1px solid #8ffcff;
+                        }
                 }
             }
      }

@@ -2,9 +2,9 @@
   <div class="right-content">
     <div class="content">
       <form class="con-form">
-        <div class="item autowin">
+        <div class="item autowin" >
           <label class="lalbel" style="width:108px">打印溯源码量：</label>
-          <div class="el-form-item__content">
+          <div class="el-form-item__content" style="width:220px">
             <div class="el-input win90">
               <input class="el-input__inner">
             </div>
@@ -26,7 +26,7 @@
                 type="date"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
@@ -34,7 +34,7 @@
                 type="date"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                
               ></DatePicker>
             </div>
           </div>
@@ -42,10 +42,10 @@
         <div  class="el-form-item last-item item">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
             <button  class="btn-add add-button win96" >
-              <Icon type="md-add"/>&nbsp;&nbsp;新增打印
+              新增打印
             </button>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .right-content .content .con-form .time {
   min-width: 480px;
   label {

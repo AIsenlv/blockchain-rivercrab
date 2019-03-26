@@ -141,8 +141,7 @@
     .sensor{
         .edit-box{
             height: 880px;
-            background-color: rgba(17, 22, 29, .4);
-            border: 1px solid #263141;
+            border: 1px solid #407678;
             overflow-y: auto;
              table{
                 width: 80%;

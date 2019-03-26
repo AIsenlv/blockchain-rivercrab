@@ -7,6 +7,12 @@ import iview from 'iview'
 
 import 'iview/dist/styles/iview.css'
 import store from '@/store/store.js'//引入store
+// 引入echarts
+import echarts from 'echarts'
+Vue.use(echarts)
+Vue.prototype.$echarts = echarts
+
+
 
 Vue.use(iview);
 

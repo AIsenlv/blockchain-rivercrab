@@ -1,19 +1,20 @@
 <template>
-    <div class="left-menu">
+    <div class="left-menu"  :class="!shows?'showsleft':''">
             
     <div class="asideBox">
       <aside>
-        <ul class="asideMenu">
+        <h3 class="cursor" @click="cursor"><i class="icon--3" :class="!shows?'icon--9':''"></i></h3>
+        <ul class="asideMenu" >
           <li v-for="(item,index) in menuList">
             <div class="oneMenu" :class="item.isSubShow?'activred':''" v-if="item.subItems.length==0?false:true" @click="showToggle(item,index)">
               <!-- <img v-bind:src="item.imgUrl" /> -->
-              <Icon :type="item.imgUrl"  class="imgst"/>
+              <i :class="item.imgUrl"  class="imgst"/>
               <span>{{item.name}}</span>
               <Icon type="md-arrow-dropleft" class="icons" :class="item.isSubShow?'iconsit':'iconsitt'"  />
             </div>
             <div   class="oneMenu" :class="item.isSubShow?'activred':''" v-if="item.subItems.length==0?true:false"  @click="Toggle(item,index)">
                   <!-- <img v-bind:src="item.imgUrl" /> -->
-                   <Icon :type="item.imgUrl" class="imgst"/>
+                   <i :class="item.imgUrl" class="imgst"/>
                   <span>{{item.name}}</span>
             </div>
             <ul  :class="item.isSubShow?'manhie':''"   class="intul">
@@ -39,9 +40,18 @@ export default {
     created(){
        this.zitoogle();
     },
+    computed:{
+        shows(){
+            return this.$store.getters.showvalid;
+        }
+    },
     methods:{
+        cursor(){
+            this.$store.commit('showvalid',!this.shows);
+        },
         //有二级菜单的点击
-        showToggle:function(item,ind){
+        showToggle(item,ind){
+            if(!this.shows){this.$store.commit('showvalid',true); return};
             this.menuList.forEach(i => {
                 //判断如果数据中的menuList[i]的show属性不等于当前数据的isSubShow属性那么menuList[i]等于false
                 if (i.isSubShow !== this.menuList[ind].isSubShow) {
@@ -53,7 +63,6 @@ export default {
         //根据路由判断菜单高亮
         zitoogle(item,ind){
              let pat=this.$route.path;
-               // console.log(pat);
                 this.menuList.forEach(i => {
                     // 判断如果数据中的menuList[i]的show属性不等于当前数据的isSubShow属性那么menuList[i]等于false
                     if (pat.indexOf(i.path)>-1){
@@ -78,7 +87,7 @@ export default {
         },
         //只有一级菜单的点击
         Toggle(item,ind){
-           
+           if(!this.shows){this.$store.commit('showvalid',true); return};
            this.$router.push({path:item.path});
             this.zitoogle();
         }
@@ -103,35 +112,62 @@ export default {
         transform: rotate(0deg);
     }
 }
+  .showsleft{
+    width: 45px;
+    transition: width 0.3s;
+    span,.intul,.icons {
+      display: none;
+      transition:display 0.3s;
+    }
+    .asideBox aside  .asideMenu li,.cursor{
+        border-bottom:0!important; 
+    }
+  }
 
   .asideBox{
     aside{   
       height: 100%;
+      .cursor{
+        text-align: center;
+         padding: 2px;
+          border-bottom: 1px solid;
+           border-color: #407678;
+        i{
+          font-size: 19px;
+         
+        }  
+      }
       .asideMenu{
+        li{
+          border-bottom: 1px solid;
+           border-color: #407678;
+        }
         .oneMenu{
-          height: 50px;
-          line-height: 50px;
-          font-size: 18px;
+          height: 41px;
+          line-height: 41px;
+          font-size: 14px;
           font-weight: normal;
           position: relative;
-          color: #a4c2ee;
-          border-bottom: 1px solid;
+          color: #a6b3c9;
           cursor: pointer;
-          border-image: linear-gradient(270deg, rgba(255, 88, 88, 0), rgba(243, 243, 243, 0.5), rgba(255, 88, 88, 0)) 10 1;
           &:hover{
             color: #a4c2ee;
+            background:#407678;
+            .imgst:before{
+              color: #8ffcff;
+            }
           }
           
           .icons{
                 position: absolute;
-                right: 20%;
-                top: 16px;
+                right: 8%;
+                top: 10px;
                 font-size: 22px;
           }
           .imgst{
-            font-size: 20px;
-            margin: 16px 10px 16px 20px;
-            vertical-align: top;
+            font-size: 16px;
+            margin: 12px 5px 16px 14px;
+            vertical-align: middle;
           }
           i.iconsit{
                 animation: asd 0.3s forwards;
@@ -141,11 +177,14 @@ export default {
           }
         }
         .intul{
-            background: linear-gradient(90deg, #000, #06080a);
+            background: rgba(89,162,164,0.2);
             border-bottom: none;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.2s;
+            li{
+              border: 0
+            }
         }
         .manhie.intul{
             max-height: 2000px;
@@ -154,31 +193,27 @@ export default {
         }
 
         .oneMenuChild{
-          padding: 0 20px 0 70px;
+          padding: 0 20px 0 50px;
           height: 34px;
           line-height: 34px;
           color: #a4c2ee;
           font-size: 12px;
           position: relative;
            cursor: pointer;
-           &:after{
-                content:'。';
-                position: absolute;
-                left: 55px;
-                top: -4px;
-                z-index: 9;
-            }
-          &:hover{color: #dab354;}
+          
+          &:hover{color: #8ffcff;}
         }
         .aciv{
-            color: #dab354;
+            color: #8ffcff;
         }
         .activred{
-            background: linear-gradient(90deg, #1b1e22, #354f7b, #1b1e22);
-            border-image: linear-gradient(90deg, rgba(255, 88, 88, 0), rgba(250, 250, 250, 0.5), rgba(255, 88, 88, 0)) 10 1;
+            background:#407678;
             .icons{
                 transform: rotate(-90deg);
                 transform-origin:center center;
+            }
+            .imgst:before{
+              color: #8ffcff;
             }
         }
       }

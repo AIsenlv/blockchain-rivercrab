@@ -8,7 +8,7 @@
           <div class="cont-p">
             <span class="list-name">您的用户名 :</span>
             <div class="big-ipt">
-              <span class="ad-name">hujie</span>
+              <span class="ad-name">admin</span>
             </div>
           </div>
           <div class="cont-p">
@@ -93,15 +93,17 @@ export default {
 <style lang="less" scoped>
 .cont-wrap {
   box-sizing: border-box;
-  border: 1px solid #2b3648;
+  border: 1px solid #407678;
   margin-bottom: 30px;
+  margin: 20px;
+  margin-top: 100px;
   .header {
-    background: rgba(51, 64, 85, 0.5);
+    background: #2b4c52;
     height: 46px;
     line-height: 46px;
     box-sizing: border-box;
-    border-bottom: 1px solid #2b3648;
-    color: #bcd7ff;
+    border-bottom: 1px solid #407678;
+    color: #fff;
     text-indent: 30px;
   }
   .center-cont {
@@ -114,7 +116,7 @@ export default {
       line-height: 60px;
       padding-left: 180px;
       .list-name {
-        color: #83ace8;
+        color: #fff;
         margin-right: 18px;
         display: inline-block;
         width: 100px;
@@ -147,8 +149,8 @@ export default {
       .el-input__inner {
           padding: 3px 10px;
         height: 32px;
-        background: #1d293c;
-        border: 1px solid #6184bf;
+        background: none;
+        border: 1px solid #407678;
         color: #fff;
         opacity: 1;
       }

@@ -63,7 +63,7 @@
                 type="date"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 200px"
+                
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
@@ -71,20 +71,20 @@
                 type="date"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 200px"
+                
               ></DatePicker>
             </div>
           </div>
         </div>
         <div  class="el-form-item last-item item positions pisntsh">
           <div class="el-form-item__content">
-            <button class="btn-add add-button" style="width:96px">
-                <i class="ivu-icon ivu-icon-md-add"></i>&nbsp;&nbsp;新增
-             </button>
+          
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
-
+            <button class="btn-add add-button" style="width:96px">
+              新增
+             </button>
           </div>
         </div>
       </form>

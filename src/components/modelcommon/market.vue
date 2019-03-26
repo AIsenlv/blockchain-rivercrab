@@ -11,23 +11,23 @@
           </div>
         </div>
         <div class="time item">
-          <label class="lalbel">销售时间：</label>
+          <label class="lalbel win70">销售时间：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
               ></DatePicker>
             </div>
           </div>
@@ -44,10 +44,10 @@
         <div  class="el-form-item last-item item">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
             <button  class="btn-add add-button win96">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增
+              新增
             </button>
           </div>
         </div>

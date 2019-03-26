@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" >
     <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 <style>
@@ -15,9 +15,11 @@ export default {
  }
 </style>
 <style lang="less">
+@import './icomoon/style.css';
 @import './style/theme.less';
 @import './style/common.less';
 @import './style/index.less';
+
 </style>
 
 

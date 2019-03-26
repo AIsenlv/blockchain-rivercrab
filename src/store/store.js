@@ -5,6 +5,7 @@ const store = new Vuex.Store({
   state:{
         arr:[],
         arr2:[],
+        show:true,
   },
   getters:{
       arrs:state=>{
@@ -12,7 +13,10 @@ const store = new Vuex.Store({
       },
       arrs2:state=>{
         return state.arr2;
-    },
+      },
+      showvalid:state=>{
+        return state.show;
+      }
   
   },
   mutations:{
@@ -22,7 +26,10 @@ const store = new Vuex.Store({
       },
       arrss2:(state,data)=>{
         state.arr2=data;
-    },
+      },
+      showvalid:(state,data)=>{
+        state.show=data;
+      }
   },
 });
 export default store;

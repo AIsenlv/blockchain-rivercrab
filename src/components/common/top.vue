@@ -1,30 +1,13 @@
 <template>
   <div class="head">
-    <p class="line">
-      <img src="../../assets/listp.png" alt>
-    </p>
-    <div class="title">
-      <p>
-        <span>水产养殖标准化生产溯源平台</span>
-        <img src="../../assets/listp.png" alt>
-      </p>
-    </div>
-    <ol class="title-nav">
-      <li >
-        <a  href="#/detail" class>
-          <span >hujie</span>
-        </a>
-      </li>
-      <li >
-        <a  href="#/passwd" class>
-          <span  class="s-next">修改密码</span>
-        </a>
-      </li>
-      <li >
-        <a  href="#/login" class>
-        <span  class="s-last">退出</span>
-        </a>
-      </li>
-    </ol>
+      <img src="../../assets/logo-2.png" class="img" alt="">
+      <Dropdown class="hoveruser">
+        <span class="sp">admin <Icon type="ios-arrow-down"></Icon></span>
+        <DropdownMenu slot="list">
+            <DropdownItem><router-link to="/detail" tag="span"><Icon type="ios-contact-outline" />个人中心</router-link></DropdownItem>
+            <DropdownItem><router-link to="/passwd" tag="span"><Icon type="ios-help-buoy-outline" />修改密码</router-link></DropdownItem>
+            <DropdownItem><router-link to="/login" tag="span"><Icon type="ios-log-out" />退出</router-link></DropdownItem>
+        </DropdownMenu>
+    </Dropdown>
   </div>
 </template>

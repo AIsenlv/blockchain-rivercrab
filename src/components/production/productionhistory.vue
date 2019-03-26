@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="item">
-          <label class="lalbel" style="width:54px">状态：</label>
+          <label class="lalbel win54" >状态：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
@@ -48,7 +48,7 @@
                 type="date"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 200px"
+                
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
@@ -56,7 +56,7 @@
                 type="date"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 200px"
+                
               ></DatePicker>
             </div>
           </div>
@@ -64,7 +64,7 @@
         <div  class="el-form-item last-item item positions">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
 
           </div>
@@ -282,7 +282,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .right-content .content .con-form .time {
   min-width: 480px;
   label {

@@ -7,11 +7,13 @@ import preview from '@/components/preview/preview'
 import home from '@/components/home/home'
 import production from '@/components/production/production'
 import productionhistory from '@/components/production/productionhistory'
-import cultivation from '@/components/modelcommon/cultivation'
+import cultivation from '@/components/culteiva/cultivation'
 import orderform from '@/components/modelcommon/orderform'
-import catchs from '@/components/modelcommon/catchs'
+import catchs from '@/components/culteiva/catchs'
 import sourcecode from '@/components/source/sourcecode'
 import sourcemanag from '@/components/source/sourcemanag'
+import blockchain from '@/components/source/blockchain'
+import coldchain from '@/components/source/coldchain'
 import detection from  '@/components/modelcommon/detection'
 import market from  '@/components/modelcommon/market'
 import aftersale from  '@/components/modelcommon/aftersale'
@@ -37,6 +39,13 @@ import dictionary from  '@/components/systemmanagement/dictionary'
 
 import picturevideo from  '@/components/internetOfThings/picturevideo'
 import historyDataIndex from  '@/components/internetOfThings/historyDataIndex'
+import timemonitor from '@/components/internetOfThings/timemonitor'
+
+import statisticsproduction from  '@/components/statistics/statisticsproduction'
+import statisticemarket from  '@/components/statistics/statisticemarket'
+
+
+
 
 Vue.use(Router)
 export default new Router({
@@ -82,17 +91,17 @@ export default new Router({
           component: productionhistory
         },
         {
-          path:'/modelcommon/cultivation',
+          path:'/culteiva/cultivation',
           name: 'cultivation',
           component: cultivation
         },
         {
-          path:'/modelcommon/orderform',
+          path:'/modelcommons/orderform',
           name: 'orderform',
           component: orderform
         },
         {
-          path:'/modelcommon/catchs',
+          path:'/culteiva/catchs',
           name: 'catchs',
           component: catchs
         },
@@ -102,27 +111,37 @@ export default new Router({
           component: sourcecode
         },
         {
+          path:'/source/coldchain',
+          name: 'coldchain',
+          component: coldchain
+        },
+        {
           path:'/source/sourcemanag',
           name: 'sourcemanag',
           component: sourcemanag
         },
         {
-          path:'/modelcommon/detection',
+          path:'/source/blockchain',
+          name: 'blockchain',
+          component: blockchain
+        },
+        {
+          path:'/internetOfThings/detection',
           name: 'detection',
           component: detection
         },
         {
-          path:'/modelcommon/market',
+          path:'/modelcommons/market',
           name: 'market',
           component: market
         },
         {
-          path:'/modelcommon/aftersale',
+          path:'/modelcommons/aftersale',
           name: 'aftersale',
           component: aftersale
         },
         {
-          path:'/modelcommon/client',
+          path:'/modelcommons/client',
           name: 'client',
           component: client
         },
@@ -215,6 +234,21 @@ export default new Router({
           path:'/internetOfThings/historyDataIndex',
           name: 'historyDataIndex',
           component: historyDataIndex
+        },
+        {
+          path:'/internetOfThings/timemonitor',
+          name: 'timemonitor',
+          component: timemonitor
+        },
+        {
+          path:'/statistics/statisticsproduction',
+          name: 'statisticsproduction',
+          component: statisticsproduction
+        },
+        {
+          path:'/statistics/statisticemarket',
+          name: 'statisticemarket',
+          component: statisticemarket
         },
         
       ],

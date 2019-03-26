@@ -12,7 +12,7 @@
         </div>
         <div class="item">
           <label class="lalbel">所属机构：</label>
-          <div class="el-form-item__content">
+          <div class="el-form-item__content" style="width:200px">
             <div class="el-input">
               <input
                 class="el-input__inner cursor"
@@ -35,13 +35,13 @@
             </div>
           </div>
         </div>
-        <div class="el-form-item last-item item">
-          <div class="el-form-item__content">
+        <div class="el-form-item last-item item"  >
+          <div class="el-form-item__content" style="min-width:290px">
             <button class="search btn-submit">
-              <Icon type="ios-search"/>&nbsp;&nbsp;查询
+              查询
             </button>
             <button class="btn-add add-button win96">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增
+              新增
             </button>
           </div>
         </div>
@@ -321,7 +321,7 @@ export default {
                 <div class="el-tree">
                        <div class="el-tree-node is-expanded" v-for="item in msg" >
                           <div class="el-tree-node__content" :style="'padding-left:'+(item.inx==1?'15':(15+item.inx*15))+'px'"  @click.stop.self="clicktext(item)">
-                            <span class="el-tree-node__expand-icon" :class="item.valid || item.next.length=='0'?'expanded':''" @click.stop.self="colorclick(item)"></span>
+                            <span class="el-tree-node__expand-icon icon-1" :class="item.valid || item.next.length=='0'?'icon-2':''" @click.stop.self="colorclick(item)"></span>
                             <span class="el-tree-node__label" @click.stop.self="clicktext(item)">{{item.text}}</span>
                           </div>
                           <div class="el-tree-node__children" v-if="item.valid">
@@ -403,10 +403,9 @@ export default {
 }
 
 .el-tree-node__expand-icon {
-    width: 16px;
-    height: 16px;
+    font-size: 16px;
     border: none;
-    background: url('../../assets/clickicon.png') no-repeat;
+    // background: url('../../assets/clickicon.png') no-repeat;
     position: relative;
     display: inline-block;
     vertical-align: middle;

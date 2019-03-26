@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="item">
-          <label class="lalbel" style="width:54px">状态：</label>
+          <label class="lalbel win54" >状态：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele">
@@ -27,10 +27,10 @@
         <div class="el-form-item last-item item">
           <div class="el-form-item__content">
             <button class="search btn-submit">
-              <Icon type="ios-search"/>&nbsp;&nbsp;查询
+              查询
             </button>
             <button class="btn-add add-button win96">
-              <Icon type="md-add"/>&nbsp;&nbsp;新增
+              新增
             </button>
           </div>
         </div>
@@ -86,10 +86,10 @@ export default {
       template: `<div>
                     <div class="el-tree-node is-expanded" v-for="a in msg" >
                         <div class="el-tree-node__content" style="padding-left: 0px;" v-if="a.next">
-                        <span class="el-tree-node__expand-icon" :class="a.valid || a.next.length=='0'?'expanded':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"  @click.stop.self='a.valid=!a.valid'></span>
+                        <span class="el-tree-node__expand-icon middle icon-1" :class="a.valid || a.next.length=='0'?'icon-2':''" :style="'margin-left:'+(a.inx==1?'100':(100+a.inx*15))+'px'"  @click.stop.self='a.valid=!a.valid'></span>
                         <!---->
                         <!---->
-                        <span>
+                        <span class="middle">
                             <span>
                             <span>{{a.text}}</span>
                             </span>

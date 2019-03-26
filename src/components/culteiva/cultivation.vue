@@ -22,13 +22,13 @@
                 <Option value="2">大河西</Option>
                 <Option value="4">大闸江蟹</Option>
                 <Option value="5">嘉兴湖大闸蟹</Option>
-                 <Option value="5">小虾蟹</Option>
+                <Option value="5">小虾蟹</Option>
               </Select>
             </div>
           </div>
         </div>
         <div class="item">
-          <label class="lalbel" style="width:54px">操作：</label>
+          <label class="lalbel win54">操作：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
@@ -44,19 +44,19 @@
           <div class="el-form-item__content">
             <div class="el-input" >
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 200px"
+                style="width:180px"
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
-                format="yyyy-MM-dd"
-                type="date"
+                format="yyyy-MM-dd HH:mm:ss"
+                type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 200px"
+                style="width:180px"
               ></DatePicker>
             </div>
           </div>
@@ -64,10 +64,10 @@
         <div  class="el-form-item last-item item positions pisntsh">
           <div class="el-form-item__content">
             <button class="btn-add add-button" style="width:96px">
-                <i class="ivu-icon ivu-icon-md-add"></i>&nbsp;&nbsp;新增
+                新增
              </button>
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
 
           </div>
@@ -186,7 +186,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -198,7 +198,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -210,7 +210,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -222,7 +222,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -234,7 +234,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -246,7 +246,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -258,7 +258,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -270,7 +270,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -282,7 +282,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -294,7 +294,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         
@@ -303,7 +303,7 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .right-content .content .con-form .time {
   min-width: 480px;
   label {

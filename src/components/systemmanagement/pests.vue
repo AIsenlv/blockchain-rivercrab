@@ -13,10 +13,10 @@
         <div  class="el-form-item last-item item">
           <div class="el-form-item__content">
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
             <button  class="btn-add add-button win96" >
-              <Icon type="md-add"/>&nbsp;&nbsp;新增角色
+              新增角色
             </button>
           </div>
         </div>

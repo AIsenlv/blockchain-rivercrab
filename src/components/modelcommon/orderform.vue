@@ -3,7 +3,7 @@
     <div class="content">
       <form class="con-form con-form-right">
         <div class="item">
-          <label class="lalbel">订单号：</label>
+          <label class="lalbel win70">订单号：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <input class="el-input__inner">
@@ -31,7 +31,7 @@
           </div>
         </div>
        <div class="item">
-          <label class="lalbel" style="width:54px">操作：</label>
+          <label class="lalbel win54" >操作：</label>
           <div class="el-form-item__content">
             <div class="el-input">
               <Select class="con-itme-sele" placeholder="请选择">
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="time item">
-          <label class="lalbel wids">订单时间：</label>
+          <label class="lalbel">订单时间：</label>
           <div class="el-form-item__content">
             <div class="el-input" >
               <DatePicker
@@ -51,7 +51,7 @@
                 type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
               ></DatePicker>
               <div class="line inblock">一</div>
               <DatePicker
@@ -59,7 +59,7 @@
                 type="datetime"
                 placeholder="选择日期"
                 class="inblock"
-                style="width: 180px"
+                style="width:180px"
               ></DatePicker>
             </div>
           </div>
@@ -67,13 +67,12 @@
          
         <div  class="el-form-item last-item item positions pisntsh">
           <div class="el-form-item__content">
-            <button class="btn-add add-button" style="width:96px">
-                <i class="ivu-icon ivu-icon-md-add"></i>&nbsp;&nbsp;新增
-             </button>
             <button  class="search btn-submit">
-                <Icon type="ios-search"/>&nbsp;&nbsp;查询
+                查询
             </button>
-
+          <button class="btn-add add-button" style="width:96px">
+                新增
+             </button>
           </div>
         </div>
       </form>
@@ -191,7 +190,7 @@ export default {
           end: "小虾蟹",
           type: "3",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -203,7 +202,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -215,7 +214,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -227,7 +226,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -239,7 +238,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -251,7 +250,7 @@ export default {
           end: "小虾蟹",
           type: "3",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -263,7 +262,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -275,7 +274,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -287,7 +286,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         {
@@ -299,7 +298,7 @@ export default {
           end: "小虾蟹",
           type: "1",
           ensd:"产中阶段",
-          ensfd:"hujie",
+          ensfd:"admin",
           ensfdt:"2017-12-26 10:43:52"
         },
         
@@ -308,12 +307,10 @@ export default {
   }
 };
 </script>
-<style lang="less">
+<style lang="less" scoped>
 .right-content .content .con-form .time {
   min-width: 480px;
-  label {
-    width: 110px !important;
-  }
+ 
 }
 </style>
 
